@@ -108,14 +108,14 @@
 	    		<div class="modal-content" style="width: 622px; height: 439px; padding: 50px;">
 	      			<div class="modal-header d-flex justify-content-around">
 	        			<button type="button" class="btn w-50">로그인</button>
-	        			<button type="button" class="btn btn-primary w-50" data-bs-toggle="modal" data-bs-target="#signUp">회원가입</button>
+	        			<button type="button" class="btn btn-outline-primary w-50" data-bs-toggle="modal" data-bs-target="#signUp">회원가입</button>
 	      			</div>
 	      			<div class="modal-body d-flex flex-wrap align-items-center">
 						<input type="text" class="form-control" id="signinId" placeholder="아이디" value="test123">
 						<input type="password" class="form-control" id="signinPw" placeholder="비밀번호" value="test123">
 	      			</div>
 	      			<div class="modal-footer d-flex justify-content-center">
-	      				<button type="button" class="btn btn-primary" id="modalCheck">로그인</button>
+	      				<button type="button" class="btn btn-outline-primary" id="modalCheck" data-bs-dismiss="modal">로그인</button>
 	      			</div>
 	    		</div>
 	  		</div>
@@ -127,7 +127,7 @@
 	    		<div class="modal-content" style="width: 622px; height: 622px; padding: 50px;">
 	      			<div class="modal-header d-flex justify-content-around">
 	        			<button type="button" class="btn w-50" data-bs-toggle="modal" data-bs-target="#signIn">로그인</button>
-	        			<button type="button" class="btn btn-primary w-50">회원가입</button>
+	        			<button type="button" class="btn btn-outline-primary w-50">회원가입</button>
 	      			</div>
 	      			<div class="modal-body d-flex">
 	      				<input type="text" class="form-control" id="signupLastname" placeholder="성">
@@ -147,10 +147,10 @@
 	      			</div>
 	      			<div class="modal-body d-flex">
 						<input type="text" class="form-control w-75" id="signupPhone" placeholder="휴대전화">
-						<button type="button" class="btn btn-primary w-25">인증</button>
+						<button type="button" class="btn btn-outline-primary w-25">인증</button>
 	      			</div>
 	      			<div class="modal-footer d-flex justify-content-center">
-	      				<button type="button" class="btn btn-primary" id="modalCheck">회원가입</button>
+	      				<button type="button" class="btn btn-outline-primary" id="modalCheck">회원가입</button>
 	      			</div>
 	    		</div>
 	  		</div>
@@ -163,11 +163,9 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 	<script type="text/javascript">	
 		
-/*     	
  		$(function() {
     	  	$('#signIn').modal('show');
     	});
- */
  
     </script>
 </body>
