@@ -61,18 +61,18 @@
 						<i class="fa-solid fa-magnifying-glass"></i>
 					</button>
 	    			<div class="col-md-1">
-    					<select id="" class="form-select">
+    					<select class="form-select selectPeriod">
       						<option selected disabled>기간</option>
+      						<option>1주일</option>
       						<option>1개월</option>
       						<option>3개월</option>
-      						<option>6개월</option>
     					</select>
   					</div>
 	    			<div class="col-md-1">
-    					<input type="text" class="form-control datepicker" placeholder="시작일">
+    					<input type="text" class="form-control datepicker dateStart" placeholder="시작일">
   					</div>
 	    			<div class="col-md-1">
-    					<input type="text" class="form-control datepicker" placeholder="종료일">
+    					<input type="text" class="form-control datepicker dateFinish" placeholder="종료일">
   					</div> 
 	    		</div>
 	    		<table class="table">
@@ -179,18 +179,18 @@
 						<i class="fa-solid fa-magnifying-glass"></i>
 					</button>
 	    			<div class="col-md-1">
-    					<select id="" class="form-select">
+    					<select class="form-select selectPeriod">
       						<option selected disabled>기간</option>
+      						<option>1주일</option>
       						<option>1개월</option>
       						<option>3개월</option>
-      						<option>6개월</option>
     					</select>
   					</div>
 	    			<div class="col-md-1">
-    					<input type="text" class="form-control datepicker" placeholder="시작일">
+    					<input type="text" class="form-control datepicker dateStart" placeholder="시작일">
   					</div>
 	    			<div class="col-md-1">
-    					<input type="text" class="form-control datepicker" placeholder="종료일">
+    					<input type="text" class="form-control datepicker dateFinish" placeholder="종료일">
   					</div> 
 	    		</div>
 	    		<table class="table">
@@ -297,18 +297,18 @@
 						<i class="fa-solid fa-magnifying-glass"></i>
 					</button>
 	    			<div class="col-md-1">
-    					<select id="" class="form-select">
+    					<select class="form-select selectPeriod">
       						<option selected disabled>기간</option>
+      						<option>1주일</option>
       						<option>1개월</option>
       						<option>3개월</option>
-      						<option>6개월</option>
     					</select>
   					</div>
 	    			<div class="col-md-1">
-    					<input type="text" class="form-control datepicker" placeholder="시작일">
+    					<input type="text" class="form-control datepicker dateStart" placeholder="시작일">
   					</div>
 	    			<div class="col-md-1">
-    					<input type="text" class="form-control datepicker" placeholder="종료일">
+    					<input type="text" class="form-control datepicker dateFinish" placeholder="종료일">
   					</div> 
 	    		</div>
 	    		<table class="table">
@@ -493,7 +493,30 @@
 			});
 	
 		});
+		
+	 	// 기간설정
+	 	$(".selectPeriod").on("change", function() {
+  			var period = $(this).val();
+  			var today = new Date();
 
+  			switch (period) {
+    			case "1주일":
+      				$(".dateStart").datepicker("setDate", today.getDate() - 7);
+      				$(".dateFinish").datepicker("setDate", today);
+      				break;
+			    case "1개월":
+			      	$(".dateStart").datepicker("setDate", today.getDate() - 30);
+			     	$(".dateFinish").datepicker("setDate", today);
+			      	break;
+			    case "3개월":
+			      	$(".dateStart").datepicker("setDate", today.getDate() - 90);
+			     	$(".dateFinish").datepicker("setDate", today);
+			      	break;
+  			}
+		});
+	 	
+	 	//
+	 	
     </script>
 </body>
 </html>

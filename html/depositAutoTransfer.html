@@ -42,7 +42,7 @@
 		<form>
 			<div class="row-md-auto" style="padding: 50px;">
 				<div class="col-md-auto" style="margin: 10px;">
-					<select id="" class="form-select">
+					<select id="selectAccount" class="form-select">
    						<option selected disabled>계좌선택</option>
    						<option>1번</option>
    						<option>2번</option>
@@ -50,7 +50,7 @@
    					</select>
 				</div>
 				<div class="col-md-auto" style="margin: 10px;">
-					<input type="text" class="form-control" placeholder="잔액" disabled>
+					<input type="text" id="balance" class="form-control" placeholder="잔액" disabled>
 				</div>
 				<div class="col-md-auto" style="margin: 10px;">
 					<input type="text" class="form-control" placeholder="계좌번호">
@@ -106,6 +106,14 @@
 				dateFormat: 'yy-mm-dd'
 			});
 	
+		});
+ 		
+ 		// 계좌선택시 잔액란에 금액 입력
+ 		$("#selectAccount").on("change", function() {
+  			var accountNumber = $(this).val();
+  			var balance = 10000; // This is just an example balance.
+
+  			$("#balance").val(balance);
 		});
 
     </script>
