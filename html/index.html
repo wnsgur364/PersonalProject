@@ -167,40 +167,6 @@
  		$(function() {
     	  	$('#signIn').modal('show');
     	});
- 
- 		$(function() {
-		  	// 핸드폰 번호 입력 칸
-			var phoneInput = $("#signupPhone");
-
-		  	// 인증 버튼
-		  	var authButton = $("#authButton");
-
-		  	// 인증 버튼 클릭 이벤트
-		  	authButton.on("click", function() {
- 			    // 핸드폰 번호 유효성 검사
-		    	if (!phoneInput.val().match(/^010[0-9]{8}$/)) {
- 			      	alert("핸드폰 번호를 확인해주세요.");
- 			      	return;
- 			    }
-
- 			    // 인증 요청
- 			    $.ajax({
- 			      	url: "/auth/phone",
- 			      	type: "POST",
- 			      	data: {
- 			        	phone: phoneInput.val()
- 			      	},
- 			      	success: function(response) {
- 			        // 인증 성공
- 			        alert("인증이 완료되었습니다.");
- 			      	},
-      				error: function(error) {
- 			        // 인증 실패
- 			        alert("인증에 실패했습니다.");
- 			      	}
-		    	});
-		  	});
-		});
  		
     </script>
 </body>
