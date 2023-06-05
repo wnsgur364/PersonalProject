@@ -106,7 +106,7 @@
 						<input type="password" class="form-control" id="signinPw" placeholder="비밀번호" value="test123">
 	      			</div>
 	      			<div class="modal-footer d-flex justify-content-center">
-	      				<button type="button" class="btn btn-outline-primary" id="modalCheck" data-bs-dismiss="modal">로그인</button>
+	      				<button type="button" class="btn btn-outline-primary" id="btnSignIn" data-bs-dismiss="modal">로그인</button>
 	      			</div>
 	    		</div>
 	  		</div>
@@ -121,27 +121,63 @@
 	        			<button type="button" class="btn btn-outline-primary w-50">회원가입</button>
 	      			</div>
 	      			<div class="modal-body d-flex">
-	      				<input type="text" class="form-control" id="signupLastname" placeholder="성">
-						<input type="text" class="form-control" id="signupFirstname" placeholder="이름">
+	      				<input type="text" class="form-control" id="signupLastname" placeholder="성" required>
+	      				<div class="valid-feedback">
+							Looks good!
+   						</div>
+   						<div class="invalid-feedback">
+   							Please choose a username.
+ 						</div>
+						<input type="text" class="form-control" id="signupFirstname" placeholder="이름" required>
+						<div class="valid-feedback">
+							Looks good!
+   						</div>
+   						<div class="invalid-feedback">
+   							Please choose a username.
+ 						</div>
 					</div>
 	      			<div class="modal-body">
-						<input type="text" class="form-control" id="signupId" placeholder="아이디">
+						<input type="text" class="form-control" id="signupId" placeholder="아이디" required>
+						<div class="valid-feedback">
+							Looks good!
+   						</div>
+   						<div class="invalid-feedback">
+   							Please choose a username.
+ 						</div>
 	      			</div>
 	      			<div class="modal-body">
-	      				<input type="password" class="form-control" id="signupPw" placeholder="비밀번호">
+	      				<input type="password" class="form-control" id="signupPw" placeholder="비밀번호" required>
+	      				<div class="valid-feedback">
+							Looks good!
+   						</div>
+   						<div class="invalid-feedback">
+   							Please choose a username.
+ 						</div>
 	      			</div>	
 	      			<div class="modal-body">
-	      				<input type="password" class="form-control" id="signupPwCheck" placeholder="비밀번호 확인">
+	      				<input type="password" class="form-control" id="signupPwCheck" placeholder="비밀번호 확인" required>
+	      				<div class="valid-feedback">
+							Looks good!
+   						</div>
+   						<div class="invalid-feedback">
+   							Please choose a username.
+ 						</div>
 	      			</div>	
 	      			<div class="modal-body">
-						<input type="text" class="form-control" id="signupEmail" placeholder="이메일">
+						<input type="text" class="form-control" id="signupEmail" placeholder="이메일" required>
+						<div class="valid-feedback">
+							Looks good!
+   						</div>
+   						<div class="invalid-feedback">
+   							Please choose a username.
+ 						</div>
 	      			</div>
 	      			<div class="modal-body d-flex">
 						<input type="text" class="form-control w-75" id="signupPhone" placeholder="휴대전화">
-						<button type="button" class="btn btn-outline-primary w-25">인증</button>
+						<button type="button" id="authButton" class="btn btn-outline-primary w-25">인증</button>
 	      			</div>
 	      			<div class="modal-footer d-flex justify-content-center">
-	      				<button type="button" class="btn btn-outline-primary" id="modalCheck">회원가입</button>
+	      				<button type="button" class="btn btn-outline-primary" id="btnSignUp">회원가입</button>
 	      			</div>
 	    		</div>
 	  		</div>
@@ -168,6 +204,40 @@
     	  	$('#signIn').modal('show');
     	});
  
+ 		$(function() {
+		  	// 핸드폰 번호 입력 칸
+			var phoneInput = $("#signupPhone");
+
+		  	// 인증 버튼
+		  	var authButton = $("#authButton");
+
+		  	// 인증 버튼 클릭 이벤트
+		  	authButton.on("click", function() {
+ 			    // 핸드폰 번호 유효성 검사
+		    	if (!phoneInput.val().match(/^010[0-9]{8}$/)) {
+ 			      	alert("핸드폰 번호를 확인해주세요.");
+ 			      	return;
+ 			    }
+
+ 			    // 인증 요청
+ 			    $.ajax({
+ 			      	url: "/auth/phone",
+ 			      	type: "POST",
+ 			      	data: {
+ 			        	phone: phoneInput.val()
+ 			      	},
+ 			      	success: function(response) {
+ 			        // 인증 성공
+ 			        alert("인증이 완료되었습니다.");
+ 			      	},
+      				error: function(error) {
+ 			        // 인증 실패
+ 			        alert("인증에 실패했습니다.");
+ 			      	}
+		    	});
+		  	});
+		});
+ 		
     </script>
 </body>
 </html>
