@@ -13,7 +13,7 @@
 	<script src="https://kit.fontawesome.com/b05f67c88a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<header class="p-3 text-bg-dark">
+	<header class="p-1 fixed-top bg-dark" id="header">
 		<div class="container-fluid">
       		<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         		<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 align-items-center">
@@ -22,17 +22,17 @@
           			<li class="dropdown">
           				<a href="#" class="nav-link px-4 text-white fs-4" role="button" data-bs-toggle="dropdown" aria-expanded="false">거래</a>
           				<ul class="dropdown-menu" data-bs-theme="dark">
-          					<li><a class="dropdown-item fs-4" href="depositMain.html">입금</a></li>
-          					<li><a class="dropdown-item fs-4" href="depositTransfer.html">이체</a></li>
-          					<li><a class="dropdown-item fs-4" href="depositAutoTransfer.html">자동이체</a></li>
+          					<li><a class="dropdown-item fs-4 text-white" href="depositMain.html">입금</a></li>
+          					<li><a class="dropdown-item fs-4 text-white" href="depositTransfer.html">이체</a></li>
+          					<li><a class="dropdown-item fs-4 text-white" href="depositAutoTransfer.html">자동이체</a></li>
         				</ul>
           			</li>
           			<li><a href="exchangeRate.html" class="nav-link px-4 text-white fs-4">환율</a></li>
           			<li class="dropdown">
           				<a href="#" class="nav-link px-4 text-white fs-4" role="button" data-bs-toggle="dropdown" aria-expanded="false">주식</a>
           				<ul class="dropdown-menu" data-bs-theme="dark">
-        					<li><a class="dropdown-item fs-4" href="domesticStock.html">국내</a></li>
-          					<li><a class="dropdown-item fs-4" href="foreignStock.html">해외</a></li>
+        					<li><a class="dropdown-item fs-4 text-white" href="domesticStock.html">국내</a></li>
+          					<li><a class="dropdown-item fs-4 text-white" href="foreignStock.html">해외</a></li>
         				</ul>
           			</li>
         		</ul>
@@ -43,11 +43,11 @@
       		</div>
     	</div>
 	</header>
-	<div id="myCarousel" class="carousel slide carousel-dark" data-bs-touch="false" style="padding: 50px; box-sizing: border-box;">
+	<div id="myCarousel" class="carousel slide carousel-dark" data-bs-touch="false" style="padding: 50px; box-sizing: border-box; margin-top: 80px;">
   		<div class="carousel-inner">
 	    	<div class="carousel-item active">
 	    		<div class="d-flex justify-content-center">
-		    		<div class="rounded border border-dark col-md-4 text-center" style="padding: 30px; background: rgb(233, 193, 242);">
+		    		<div class="rounded border border-dark col-md-4 text-left bg-secondary" style="padding: 30px;">
 		    			<p class="fs-4">예금주: 이준혁</p>
 		    			<p class="fs-4">계좌명: 이준혁 통장1</p>			
 		    			<p class="fs-4">계좌번호: 3414-34-3141</p>
@@ -165,7 +165,7 @@
 	    	</div>
     		<div class="carousel-item">
     			<div class="d-flex justify-content-center">
-		    		<div class="rounded border border-dark col-md-4 text-center" style="padding: 30px; background: #93eddd;">
+		    		<div class="rounded border border-dark col-md-4 text-left bg-success" style="padding: 30px;">
 		    			<p class="fs-4">예금주: 이준혁</p>
 		    			<p class="fs-4">계좌명: 이준혁 통장2</p>			
 		    			<p class="fs-4">계좌번호: 3414-34-3141</p>
@@ -283,7 +283,7 @@
 	    	</div>
 	    	<div class="carousel-item">
 	    		<div class="d-flex justify-content-center">
-		    		<div class="rounded border border-dark col-md-4 text-center" style="padding: 30px; background: #d5ed93;">
+		    		<div class="rounded border border-dark col-md-4 text-left bg-info" style="padding: 30px;">
 		    			<p class="fs-4">예금주: 이준혁</p>
 		    			<p class="fs-4">계좌명: 이준혁 통장3</p>		
 		    			<p class="fs-4">계좌번호: 3414-34-3141</p>
