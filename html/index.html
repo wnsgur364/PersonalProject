@@ -25,7 +25,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<header class="fixed-top" id="header" style="width: 1320px; margin: auto; background: #F6E6C2;">
+	<header class="fixed-top" id="header" style="width: 1320px; margin: auto;">
 		<div class="container">
       		<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         		<ul class="nav col-auto me-auto mb-2 justify-content-center align-items-center">
@@ -706,52 +706,7 @@
 	<div class="container" style="width: 1000px; height: 600px; padding-top: 100px;" id="foreignStock">
 		<div class="h4 d-flex justify-content-center">해외 주식 API</div>
 	</div>
-	
-	
-	<form>
-		<div class="modal fade bg-body-secondary" data-bs-theme="white" id="signUp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" dialog aria-labelledby="staticBackdropLabel" aria-hidden="true">
-	  		<div class="modal-dialog">
-	    		<div class="modal-content" style="width: 622px; height: 700px; padding: 50px;">
-	      			<div class="modal-header d-flex justify-content-around">
-	        			<button type="button" class="btn w-50" data-bs-toggle="modal" data-bs-target="#signIn">로그인</button>
-	        			<button type="button" class="btn btn-outline-primary w-50">회원가입</button>
-	      			</div>
-					<div class="modal-body d-flex">
-						<input type="text" class="form-control" id="signupLastname" placeholder="성" required>
-					  	<input type="text" class="form-control" id="signupFirstname" placeholder="이름" required>
-				  	</div>
-	      			<div class="modal-body">
-						<input type="text" class="form-control" id="signupId" placeholder="아이디" required>
-	      			</div>
-	      			<div class="modal-body">
-	      				<input type="password" class="form-control" id="signupPw" placeholder="비밀번호" required>
-	      			</div>	
-	      			<div class="modal-body">
-	      				<input type="password" class="form-control" id="signupPwCheck" placeholder="비밀번호 확인" required>
-	      			</div>	
-	      			<div class="modal-body">
-						<input type="text" class="form-control" id="signupEmail" placeholder="이메일" required>
-	      			</div>
-					<div class="modal-body d-flex">
-						<select class="form-select selectPeriod">
-							<option selected disabled>성별</option>
-							<option>남자</option>
-							<option>여자</option>
-							<option>기타</option>
-					  	</select>
-				  	</div>
-	      			<div class="modal-body d-flex">
-						<input type="text" class="form-control w-75" id="signupPhone" placeholder="휴대전화">
-						<button type="button" id="authButton" class="btn btn-outline-primary w-25">인증</button>
-	      			</div>
-	      			<div class="modal-footer d-flex justify-content-center">
-	      				<button type="button" class="btn btn-outline-primary" id="btnSignUp">회원가입</button>
-	      			</div>
-	    		</div>
-	  		</div>
-		</div>
-	</form>
-	<div class="container" style="background: #F6E6C2; padding: 20px;">
+	<div class="container" style="padding: 20px;">
   		<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
     		<ul class="nav col-4 justify-content-start list-unstyled d-flex">
     			<li><a href="#" class="nav-link px-2 text-secondary">KOKOA BANK</a></li>
