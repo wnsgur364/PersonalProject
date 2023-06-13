@@ -17,23 +17,23 @@
 	<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<header class="fixed-top bg-dark" id="header" style="width: 1320px; margin: auto;">
+	<header class="fixed-top" id="header" style="width: 1320px; margin: auto; background: #F6E6C2;">
 		<div class="container">
       		<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         		<ul class="nav col-auto me-auto mb-2 justify-content-center align-items-center">
          	 		<li><a href="#" class="nav-link text-secondary fs-3 px-5">KOKOA BANK</a></li>
-         	 		<li><a href="#news" class="nav-link px-3 text-white">소식</a></li>
-          			<li><a href="#myCarousel" class="nav-link px-3 text-white">조회</a></li>
-          			<li><a href="#deposit" class="nav-link px-3 text-white">입금</a></li>
-          			<li><a href="#send" class="nav-link px-3 text-white">이체</a></li>
-          			<li><a href="#autoSend" class="nav-link px-3 text-white">자동이체</a></li>
-          			<li><a href="#exchangeRate" class="nav-link px-3 text-white">환율</a></li>
-          			<li><a href="#domesticStock" class="nav-link px-3 text-white">국내주식</a></li>
-          			<li><a href="#foreignStock" class="nav-link px-3 text-white">해외주식</a></li>
+         	 		<li><a href="#news" class="nav-link px-3 text-black">소식</a></li>
+          			<li><a href="#myCarousel" class="nav-link px-3 text-black">조회</a></li>
+          			<li><a href="#deposit" class="nav-link px-3 text-black">입금</a></li>
+          			<li><a href="#send" class="nav-link px-3 text-black">이체</a></li>
+          			<li><a href="#autoSend" class="nav-link px-3 text-black">자동이체</a></li>
+          			<li><a href="#exchangeRate" class="nav-link px-3 text-black">환율</a></li>
+          			<li><a href="#domesticStock" class="nav-link px-3 text-black">국내주식</a></li>
+          			<li><a href="#foreignStock" class="nav-link px-3 text-black">해외주식</a></li>
         		</ul>
         		<div class="col text-end">
-          			<button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#signIn" id="btnSignin">로그인</button>
-					<button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#signUp" id="btnSignup">회원가입</button>	
+          			<button type="button" class="btn text-black" id="btnLogin"><a href="login.html" style="text-decoration: none; color: black; width: 100%; height: 100%;">로그인</a></button>
+					<button type="button" class="btn text-black" id="btnRegister"><a href="register.html" style="text-decoration: none; color: black; width: 100%; height: 100%;">회원가입</a></button>	
         		</div>
       		</div>
     	</div>
@@ -148,9 +148,11 @@
 	    		</div>
 	    		<br>
 	    		<div class="d-flex justify-content-start">
-	    			<button type="button" class="btn btn-danger" id="btnSearch">
-						<i class="fa-solid fa-magnifying-glass"></i>
-					</button>
+	    			<div class="col-1" style="margin-right: -32px;">
+	    				<button type="button" class="btn btn-danger" id="btnSearch">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</button>
+	    			</div>
 	    			<div class="col-2">
     					<select class="form-select selectPeriod">
       						<option selected disabled>기간</option>
@@ -165,7 +167,7 @@
 	    			<div class="col-2">
     					<input type="text" class="form-control datepicker dateFinish" placeholder="종료일">
   					</div>
-  					<div class="text-end" style="margin-left: 15%;">
+  					<div class="text-end" style="margin-left: 226px;">
 	    				<a class="btn btn-outline-success" role="button" aria-disabled="true" data-bs-toggle="modal" data-bs-target="#accountAdd">계좌개설</a>
 	    				<a class="btn btn-outline-primary" role="button" aria-disabled="true" data-bs-toggle="modal" data-bs-target="#accountCorrect" style="margin-left: -5.5px;">계좌수정</a>
 	    			</div> 
@@ -177,75 +179,75 @@
 				      		<th scope="col">내용</th>
 				      		<th scope="col">금액</th>
 				      		<th scope="col">입·출금</th>
-				      		<th scope="col">잔액<th>
+				      		<th scope="col">잔액</th>
 				    	</tr>
 				  	</thead>
 			  		<tbody>
 				    	<tr>
-				      		<th scope="row">2023-06-01</th>
+				      		<td scope="row">2023-06-01</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
 				      		<td>500,000</td>
 				    	</tr>
 				    	<tr>
-				      		<th scope="row">2023-06-02</th>
+				      		<td scope="row">2023-06-02</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
 				      		<td>500,000</td>
 				    	</tr>
 				    	<tr>
-				      		<th scope="row">2023-06-05</th>
+				      		<td scope="row">2023-06-05</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
 				      		<td>500,000</td>
 				    	</tr>
 				    	<tr>
-				      		<th scope="row">2023-06-07</th>
+				      		<td scope="row">2023-06-07</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
 				      		<td>500,000</td>
 				    	</tr>
 				    	<tr>
-				      		<th scope="row">2023-06-08</th>
+				      		<td scope="row">2023-06-08</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
 				      		<td>500,000</td>
 				    	</tr>
 				    	<tr>
-				      		<th scope="row">2023-06-09</th>
+				      		<td scope="row">2023-06-09</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
 				      		<td>500,000</td>
 				    	</tr>
 				    	<tr>
-				      		<th scope="row">2023-06-10</th>
+				      		<td scope="row">2023-06-10</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
 				      		<td>500,000</td>
 				    	</tr>
 				    	<tr>
-				      		<th scope="row">2023-06-13</th>
+				      		<td scope="row">2023-06-13</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
 				      		<td>500,000</td>
 				    	</tr>
 				    	<tr>
-				      		<th scope="row">2023-06-14</th>
+				      		<td scope="row">2023-06-14</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
 				      		<td>500,000</td>
 				    	</tr>
 				    	<tr>
-				      		<th scope="row">2023-06-15</th>
+				      		<td scope="row">2023-06-15</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
@@ -267,9 +269,11 @@
 	    		</div>
 	    		<br>
 	    		<div class="d-flex justify-content-start">
-	    			<button type="button" class="btn btn-danger col-md-1" id="btnSearch">
-						<i class="fa-solid fa-magnifying-glass"></i>
-					</button>
+	    			<div class="col-1" style="margin-right: -32px;">
+	    				<button type="button" class="btn btn-danger" id="btnSearch">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</button>
+	    			</div>
 	    			<div class="col-2">
     					<select class="form-select selectPeriod">
       						<option selected disabled>기간</option>
@@ -284,7 +288,7 @@
 	    			<div class="col-2">
     					<input type="text" class="form-control datepicker dateFinish" placeholder="종료일">
   					</div> 
-  					<div class="text-end" style="margin-left: 15%;">
+  					<div class="text-end" style="margin-left: 226px;">
 	    				<a class="btn btn-outline-success" role="button" aria-disabled="true" data-bs-toggle="modal" data-bs-target="#accountAdd">계좌개설</a>
 	    				<a class="btn btn-outline-primary" role="button" aria-disabled="true" data-bs-toggle="modal" data-bs-target="#accountCorrect" style="margin-left: -5.5px;">계좌수정</a>
 	    			</div> 
@@ -296,75 +300,75 @@
 				      		<th scope="col">내용</th>
 				      		<th scope="col">금액</th>
 				      		<th scope="col">입·출금</th>
-				      		<th scope="col">잔액<th>
+				      		<th scope="col">잔액</th>
 				    	</tr>
 				  	</thead>
 			  		<tbody>
 				    	<tr>
-				      		<th scope="row">2023-06-01</th>
+				      		<td scope="row">2023-06-01</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
 				      		<td>500,000</td>
 				    	</tr>
 				    	<tr>
-				      		<th scope="row">2023-06-02</th>
+				      		<td scope="row">2023-06-02</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
 				      		<td>500,000</td>
 				    	</tr>
 				    	<tr>
-				      		<th scope="row">2023-06-05</th>
+				      		<td scope="row">2023-06-05</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
 				      		<td>500,000</td>
 				    	</tr>
 				    	<tr>
-				      		<th scope="row">2023-06-07</th>
+				      		<td scope="row">2023-06-07</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
 				      		<td>500,000</td>
 				    	</tr>
 				    	<tr>
-				      		<th scope="row">2023-06-08</th>
+				      		<td scope="row">2023-06-08</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
 				      		<td>500,000</td>
 				    	</tr>
 				    	<tr>
-				      		<th scope="row">2023-06-09</th>
+				      		<td scope="row">2023-06-09</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
 				      		<td>500,000</td>
 				    	</tr>
 				    	<tr>
-				      		<th scope="row">2023-06-10</th>
+				      		<td scope="row">2023-06-10</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
 				      		<td>500,000</td>
 				    	</tr>
 				    	<tr>
-				      		<th scope="row">2023-06-13</th>
+				      		<td scope="row">2023-06-13</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
 				      		<td>500,000</td>
 				    	</tr>
 				    	<tr>
-				      		<th scope="row">2023-06-14</th>
+				      		<td scope="row">2023-06-14</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
 				      		<td>500,000</td>
 				    	</tr>
 				    	<tr>
-				      		<th scope="row">2023-06-15</th>
+				      		<td scope="row">2023-06-15</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
@@ -386,9 +390,11 @@
 	    		</div>
 	    		<br>
 	    		<div class="d-flex justify-content-start">
-	    			<button type="button" class="btn btn-danger col-md-1" id="btnSearch">
-						<i class="fa-solid fa-magnifying-glass"></i>
-					</button>
+	    			<div class="col-1" style="margin-right: -32px;">
+	    				<button type="button" class="btn btn-danger" id="btnSearch">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</button>
+	    			</div>
 	    			<div class="col-2">
     					<select class="form-select selectPeriod">
       						<option selected disabled>기간</option>
@@ -403,7 +409,7 @@
 	    			<div class="col-2">
     					<input type="text" class="form-control datepicker dateFinish" placeholder="종료일">
   					</div> 
-  					<div class="text-end" style="margin-left: 15%;">
+  					<div class="text-end" style="margin-left: 226px;">
 	    				<a class="btn btn-outline-success" role="button" aria-disabled="true" data-bs-toggle="modal" data-bs-target="#accountAdd">계좌개설</a>
 	    				<a class="btn btn-outline-primary" role="button" aria-disabled="true" data-bs-toggle="modal" data-bs-target="#accountCorrect" style="margin-left: -5.5px;">계좌수정</a>
 	    			</div> 
@@ -415,75 +421,75 @@
 				      		<th scope="col">내용</th>
 				      		<th scope="col">금액</th>
 				      		<th scope="col">입·출금</th>
-				      		<th scope="col">잔액<th>
+				      		<th scope="col">잔액</th>
 				    	</tr>
 				  	</thead>
 			  		<tbody>
 				    	<tr>
-				      		<th scope="row">2023-06-01</th>
+				      		<td scope="row">2023-06-01</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
 				      		<td>500,000</td>
 				    	</tr>
 				    	<tr>
-				      		<th scope="row">2023-06-02</th>
+				      		<td scope="row">2023-06-02</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
 				      		<td>500,000</td>
 				    	</tr>
 				    	<tr>
-				      		<th scope="row">2023-06-05</th>
+				      		<td scope="row">2023-06-05</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
 				      		<td>500,000</td>
 				    	</tr>
 				    	<tr>
-				      		<th scope="row">2023-06-07</th>
+				      		<td scope="row">2023-06-07</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
 				      		<td>500,000</td>
 				    	</tr>
 				    	<tr>
-				      		<th scope="row">2023-06-08</th>
+				      		<td scope="row">2023-06-08</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
 				      		<td>500,000</td>
 				    	</tr>
 				    	<tr>
-				      		<th scope="row">2023-06-09</th>
+				      		<td scope="row">2023-06-09</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
 				      		<td>500,000</td>
 				    	</tr>
 				    	<tr>
-				      		<th scope="row">2023-06-10</th>
+				      		<td scope="row">2023-06-10</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
 				      		<td>500,000</td>
 				    	</tr>
 				    	<tr>
-				      		<th scope="row">2023-06-13</th>
+				      		<td scope="row">2023-06-13</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
 				      		<td>500,000</td>
 				    	</tr>
 				    	<tr>
-				      		<th scope="row">2023-06-14</th>
+				      		<td scope="row">2023-06-14</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
 				      		<td>500,000</td>
 				    	</tr>
 				    	<tr>
-				      		<th scope="row">2023-06-15</th>
+				      		<td scope="row">2023-06-15</td>
 				      		<td>순대국</td>
 				      		<td>5,000</td>
 				      		<td>출금</td>
@@ -694,25 +700,6 @@
 	</div>
 	
 	
-	<!-- <form>
-		<div class="modal fade bg-body-secondary" data-bs-theme="white" id="signIn" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-	  		<div class="modal-dialog">
-	    		<div class="modal-content" style="width: 622px; height: 439px; padding: 50px;">
-	      			<div class="modal-header d-flex justify-content-around">
-	        			<button type="button" class="btn w-50">로그인</button>
-	        			<button type="button" class="btn btn-outline-primary w-50" data-bs-toggle="modal" data-bs-target="#signUp">회원가입</button>
-	      			</div>
-	      			<div class="modal-body d-flex flex-wrap align-items-center">
-						<input type="text" class="form-control" id="signinId" placeholder="아이디" value="test123">
-						<input type="password" class="form-control" id="signinPw" placeholder="비밀번호" value="test123">
-	      			</div>
-	      			<div class="modal-footer d-flex justify-content-center">
-	      				<button type="button" class="btn btn-outline-primary" id="btnSignIn" data-bs-dismiss="modal">로그인</button>
-	      			</div>
-	    		</div>
-	  		</div>
-		</div>
-	</form>
 	<form>
 		<div class="modal fade bg-body-secondary" data-bs-theme="white" id="signUp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" dialog aria-labelledby="staticBackdropLabel" aria-hidden="true">
 	  		<div class="modal-dialog">
@@ -755,8 +742,8 @@
 	    		</div>
 	  		</div>
 		</div>
-	</form> -->
-	<div class="container" style="background: #FFEEBB; padding: 20px;">
+	</form>
+	<div class="container" style="background: #F6E6C2; padding: 20px;">
   		<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
     		<ul class="nav col-4 justify-content-start list-unstyled d-flex">
     			<li><a href="#" class="nav-link px-2 text-secondary">KOKOA BANK</a></li>
