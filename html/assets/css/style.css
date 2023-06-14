@@ -19,6 +19,10 @@ body {
   color: #444444;
 }
 
+li {
+	list-style: none;
+}
+
 a {
   color: #4154f1;
   text-decoration: none;
