@@ -5,164 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KOKOA BANK</title>
-  	<!-- Google Fonts -->
-  	<link href="https://fonts.gstatic.com" rel="preconnect">
-  	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-	<!-- font-family: 'Dongle', sans-serif; -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
-	<!-- Vendor CSS Files -->
+    <!-- Vendor CSS Files -->
   	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  	<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
- 	<link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
- 	<link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
-  	<link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  	<link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
-  	<!-- Template Main CSS File -->
-  	<link href="assets/css/style.css" rel="stylesheet">
 	<!-- JqueryUi -->
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 	<!-- Fontawesome -->
 	<script src="https://kit.fontawesome.com/b05f67c88a.js" crossorigin="anonymous"></script>
+	<!-- font-family: 'Dongle', sans-serif; -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
+	<style>
+		.back-to-top {
+	  		position: fixed;
+		  	visibility: hidden;
+		  	opacity: 0;
+		  	right: 15px;
+		  	bottom: 15px;
+		  	z-index: 99999;
+		  	background: #4154f1;
+		  	width: 40px;
+		  	height: 40px;
+		  	border-radius: 4px;
+		  	transition: all 0.4s;
+		}
+		
+		.back-to-top i {
+		  	font-size: 24px;
+		  	color: #fff;
+		  	line-height: 0;
+		}
+		
+		.back-to-top:hover {
+		  	background: #6776f4;
+		  	color: #fff;
+		}
+		
+		.back-to-top.active {
+		  	visibility: visible;
+		  	opacity: 1;
+		}
+	</style>
 </head>
 <body>
-	<!-- 헤더 -->
-	<header id="header" class="header fixed-top d-flex align-items-center">
-	    <div class="d-flex align-items-center justify-content-between">
-      		<a href="#" class="logo d-flex align-items-center">
-        		<!-- <img src="assets/img/logo.png" alt=""> -->
-        		<span class="d-none d-lg-block">KOKOA BANK</span>
-      		</a>
-      		<i class="bi bi-list toggle-sidebar-btn"></i>
-    	</div>
-    	<div class="search-bar">
-      		<form class="search-form d-flex align-items-center" method="POST" action="#">
-        		<input type="text" name="query" placeholder="Search" title="Enter search keyword">
-        		<button type="submit" title="Search"><i class="bi bi-search"></i></button>
-      		</form>
-    	</div>
-	    <nav class="header-nav ms-auto">
-    		<ul class="d-flex align-items-center">
-        		<li class="nav-item d-block d-lg-none">
-          			<a class="nav-link nav-icon search-bar-toggle " href="#">
-            			<i class="bi bi-search"></i>
-          			</a>
-        		</li>
-		        <li class="nav-item dropdown pe-3">
-	          		<a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-	            		<img src="img/profile-img.jpg" alt="Profile" class="rounded-circle">
-	            		<span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
-	          		</a><!-- End Profile Iamge Icon -->
-	          		<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
-	            		<li class="dropdown-header">
-	              			<h6>Kevin Anderson</h6>
-	              			<span>Web Designer</span>
-	            		</li>
-	            		<li>
-	              			<hr class="dropdown-divider">
-	            		</li>
-	            		<li>
-	              			<a class="dropdown-item d-flex align-items-center" href="users-profile.html">
-	                			<i class="bi bi-person"></i>
-	                			<span>My Profile</span>
-	              			</a>
-	           			</li>
-	            		<li>
-	              			<hr class="dropdown-divider">
-	            		</li>
-	            		<li>
-	              			<a class="dropdown-item d-flex align-items-center" href="users-profile.html">
-	                			<i class="bi bi-gear"></i>
-	                			<span>Account Settings</span>
-	           				</a>
-	            		</li>
-	            		<li>
-	              			<hr class="dropdown-divider">
-	            		</li>
-	            		<li>
-	              			<a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
-	                			<i class="bi bi-question-circle"></i>
-	                			<span>Need Help?</span>
-	              			</a>
-	            		</li>
-	            		<li>
-	              			<hr class="dropdown-divider">
-	            		</li>
-	            		<li>
-	              			<a class="dropdown-item d-flex align-items-center" href="#">
-	                			<i class="bi bi-box-arrow-right"></i>
-	                			<span>Sign Out</span>
-	              			</a>
-	            		</li>
-	          		</ul>
-	        	</li>
-        	</ul>
-    	</nav>
-  	</header>
-  	<!-- 사이드바 -->
-	<aside id="sidebar" class="sidebar">
-	    <ul class="sidebar-nav" id="sidebar-nav">
-			<li class="nav-item">
-        		<a class="nav-link collapsed" href="#news">
-          			<i class="bi bi-grid"></i>
-          			<span>소식</span>
-        		</a>
-      		</li>
-       		<li class="nav-item">
-        		<a class="nav-link collapsed" href="#myCarousel">
-          			<i class="bi bi-layout-text-window-reverse"></i>
-          			<span>조회</span>
-        		</a>
-      		</li>
-      		<li class="nav-item">
-        		<a class="nav-link " data-bs-target="#tables-nav" data-bs-toggle="collapse" href="">
-          			<i class="bi bi-layout-text-window-reverse"></i><span>거래</span><i class="bi bi-chevron-down ms-auto"></i>
-        		</a>
-        		<ul id="tables-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
-          			<li>
-            			<a href="#deposit" class="active">
-              				<i class="bi bi-circle"></i><span>입금</span>
-            			</a>
-          			</li>
-          			<li>
-            			<a href="#send">
-              				<i class="bi bi-circle"></i><span>이체</span>
-            			</a>
-          			</li>
-          			<li>
-            			<a href="#autoSend">
-              				<i class="bi bi-circle"></i><span>자동이체</span>
-            			</a>
-          			</li>
+	<header class="fixed-top bg-white" id="header" style="width: 1320px; margin: auto;">
+		<div class="container">
+      		<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        		<ul class="nav col-auto me-auto mb-2 justify-content-center align-items-center">
+         	 		<li><a href="#" class="nav-link text-secondary fs-3 px-5">KOKOA BANK</a></li>
+         	 		<li><a href="#news" class="nav-link px-3 text-black">소식</a></li>
+          			<li><a href="#myCarousel" class="nav-link px-3 text-black">조회</a></li>
+          			<li><a href="#deposit" class="nav-link px-3 text-black">입금</a></li>
+          			<li><a href="#send" class="nav-link px-3 text-black">이체</a></li>
+          			<li><a href="#autoSend" class="nav-link px-3 text-black">자동이체</a></li>
+          			<li><a href="#exchangeRate" class="nav-link px-3 text-black">환율</a></li>
+          			<li><a href="#domesticStock" class="nav-link px-3 text-black">국내주식</a></li>
+          			<li><a href="#foreignStock" class="nav-link px-3 text-black">해외주식</a></li>
         		</ul>
-      		</li>
-      		<li class="nav-item">
-        		<a class="nav-link collapsed" href="#exchangeRate">
-          			<i class="bi bi-layout-text-window-reverse"></i>
-          			<span>환율</span>
-        		</a>
-      		</li>
-      		<li class="nav-item">
-        		<a class="nav-link " data-bs-target="#tables-nav" data-bs-toggle="collapse" href="">
-          			<i class="bi bi-layout-text-window-reverse"></i><span>주식</span><i class="bi bi-chevron-down ms-auto"></i>
-        		</a>
-        		<ul id="tables-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
-          			<li>
-            			<a href="#domesticStock" class="active">
-              				<i class="bi bi-circle"></i><span>국내주식</span>
-            			</a>
-          			</li>
-          			<li>
-            			<a href="#foreignStock">
-              				<i class="bi bi-circle"></i><span>해외주식</span>
-            			</a>
-          			</li>
-        		</ul>
-      		</li>
-    	</ul>
-	</aside>
+        		<div class="col text-end">
+          			<button type="button" class="btn text-black" id="btnLogin"><a href="login.html" style="text-decoration: none; color: black; width: 100%; height: 100%;">로그인</a></button>
+					<button type="button" class="btn text-black" id="btnRegister"><a href="register.html" style="text-decoration: none; color: black; width: 100%; height: 100%;">회원가입</a></button>	
+        		</div>
+      		</div>
+    	</div>
+	</header>
 	<!-- 메인 -->
 	<div class="container">
 		<div class="row">
@@ -823,27 +730,25 @@
 	<div class="container" style="width: 1320px; height: 900px; padding-top: 100px;" id="foreignStock">
 		<div class="h4 d-flex justify-content-center">해외 주식 API</div>
 	</div>
-  	<footer id="footer" class="footer">
-    	<div class="copyright">
-     		 &copy; Copyright <strong><span>KOKOA BANK</span></strong> Corp. All Rights Reserved
-    	</div>
-  	</footer>
+	<div class="container bg-white" id="footer">
+  		<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-white">
+    		<ul class="nav col-4 justify-content-start list-unstyled d-flex">
+    			<li><a href="#" class="nav-link px-2 text-secondary">KOKOA BANK</a></li>
+    		</ul>
+    		<div class="col-4 d-flex align-items-center justify-content-end">
+      			<div class="copyright">
+     		 		&copy; Copyright <strong><span>KOKOA BANK</span></strong> Corp. All Rights Reserved
+    			</div>
+    		</div>
+  		</footer>
   	<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-	<!-- Vendor JS Files -->
-	<script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
-	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="assets/vendor/chart.js/chart.umd.js"></script>
-	<script src="assets/vendor/echarts/echarts.min.js"></script>
-	<script src="assets/vendor/quill/quill.min.js"></script>
-	<script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
-	<script src="assets/vendor/tinymce/tinymce.min.js"></script>
-	<script src="assets/vendor/php-email-form/validate.js"></script>
-	<!-- Template Main JS File -->
-	<script src="assets/js/main.js"></script>
+	</div>
 	<!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <!-- JqueryUi -->
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- Vendor JS Files -->
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<!-- 스크립트 작성 -->
 	<script type="text/javascript">	
 		
@@ -888,7 +793,7 @@
 			$("#balance").val(balance);
 		});
 	 	
-/* 	 	// 상단으로 가는 버튼
+	 	// 상단으로 가는 버튼
 		const backtotop = document.querySelector('.back-to-top')
 
 		if (backtotop) {
@@ -902,7 +807,7 @@
 
 		  	window.addEventListener('load', toggleBacktotop)
 		  	window.addEventListener('scroll', toggleBacktotop)
-		} */
+		}
 	 	
 	 	// 푸터 스크롤 내릴때
 	 	const footer = document.querySelector('#footer')
