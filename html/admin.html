@@ -10,146 +10,31 @@
 	<!-- Vendor CSS Files -->
   	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  	<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
- 	<link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
- 	<link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
-  	<link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   	<link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
   	<!-- Template Main CSS File -->
   	<link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
-	<header id="header" class="header fixed-top d-flex align-items-center">
-	    <div class="d-flex align-items-center justify-content-between">
-      		<a href="#" class="logo d-flex align-items-center">
-        		<!-- <img src="assets/img/logo.png" alt=""> -->
-        		<span class="d-none d-lg-block">KOKOA BANK</span>
-      		</a>
-      		<i class="bi bi-list toggle-sidebar-btn"></i>
-    	</div>
-    	<div class="search-bar">
-      		<form class="search-form d-flex align-items-center" method="POST" action="#">
-        		<input type="text" name="query" placeholder="Search" title="Enter search keyword">
-        		<button type="submit" title="Search"><i class="bi bi-search"></i></button>
-      		</form>
-    	</div>
-	    <nav class="header-nav ms-auto">
-    		<ul class="d-flex align-items-center">
-        		<li class="nav-item d-block d-lg-none">
-          			<a class="nav-link nav-icon search-bar-toggle " href="#">
-            			<i class="bi bi-search"></i>
-          			</a>
-        		</li>
-		        <li class="nav-item dropdown pe-3">
-	          		<a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-	            		<img src="img/profile-img.jpg" alt="Profile" class="rounded-circle">
-	            		<span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
-	          		</a><!-- End Profile Iamge Icon -->
-	          		<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
-	            		<li class="dropdown-header">
-	              			<h6>Kevin Anderson</h6>
-	              			<span>Web Designer</span>
-	            		</li>
-	            		<li>
-	              			<hr class="dropdown-divider">
-	            		</li>
-	            		<li>
-	              			<a class="dropdown-item d-flex align-items-center" href="users-profile.html">
-	                			<i class="bi bi-person"></i>
-	                			<span>My Profile</span>
-	              			</a>
-	           			</li>
-	            		<li>
-	              			<hr class="dropdown-divider">
-	            		</li>
-	            		<li>
-	              			<a class="dropdown-item d-flex align-items-center" href="users-profile.html">
-	                			<i class="bi bi-gear"></i>
-	                			<span>Account Settings</span>
-	           				</a>
-	            		</li>
-	            		<li>
-	              			<hr class="dropdown-divider">
-	            		</li>
-	            		<li>
-	              			<a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
-	                			<i class="bi bi-question-circle"></i>
-	                			<span>Need Help?</span>
-	              			</a>
-	            		</li>
-	            		<li>
-	              			<hr class="dropdown-divider">
-	            		</li>
-	            		<li>
-	              			<a class="dropdown-item d-flex align-items-center" href="#">
-	                			<i class="bi bi-box-arrow-right"></i>
-	                			<span>Sign Out</span>
-	              			</a>
-	            		</li>
-	          		</ul>
-	        	</li>
-        	</ul>
-    	</nav>
-  	</header>
-	<aside id="sidebar" class="sidebar">
-	    <ul class="sidebar-nav" id="sidebar-nav">
-			<li class="nav-item">
-        		<a class="nav-link collapsed" href="#">
-          			<i class="bi bi-grid"></i>
-          			<span>HOME</span>
-        		</a>
-      		</li>
-       		<li class="nav-item">
-        		<a class="nav-link collapsed" href="#">
-          			<i class="bi bi-layout-text-window-reverse"></i>
-          			<span>Tables1</span>
-        		</a>
-      		</li>
-      		<li class="nav-item">
-        		<a class="nav-link collapsed" href="#">
-          			<i class="bi bi-layout-text-window-reverse"></i>
-          			<span>Tables2</span>
-        		</a>
-      		</li>
-      		<li class="nav-item">
-        		<a class="nav-link collapsed" href="#">
-          			<i class="bi bi-layout-text-window-reverse"></i>
-          			<span>Tables3</span>
-        		</a>
-      		</li>
-      		<li class="nav-item">
-        		<a class="nav-link collapsed" href="#">
-          			<i class="bi bi-layout-text-window-reverse"></i>
-          			<span>Tables4</span>
-        		</a>
-      		</li>
-      		<li class="nav-item">
-        		<a class="nav-link " data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-          			<i class="bi bi-layout-text-window-reverse"></i><span>Tables5</span><i class="bi bi-chevron-down ms-auto"></i>
-        		</a>
-        		<ul id="tables-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
-          			<li>
-            			<a href="#">
-              				<i class="bi bi-circle"></i><span>General Tables</span>
-            			</a>
-          			</li>
-          			<li>
-            			<a href="#" class="active">
-              				<i class="bi bi-circle"></i><span>Data Tables</span>
-            			</a>
-          			</li>
+	<header class="fixed-top container" id="header" style="width: 1320px; margin: auto;">
+		<div class="container">
+      		<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        		<ul class="nav col-auto me-auto mb-2 align-items-center">
+         	 		<li><a href="#" class="nav-link text-secondary fs-3 px-5">KOKOA BANK</a></li>
+          			<li><a href="#" class="nav-link px-3 text-black">계좌관리</a></li>
+          			<li><a href="#" class="nav-link px-3 text-black">거래관리</a></li>
+          			<li><a href="#" class="nav-link px-3 text-black">고객관리</a></li>
+          			<li><a href="#" class="nav-link px-3 text-black">수수료관리</a></li>
         		</ul>
-      		</li>
-    	</ul>
-	</aside>
-  	<main id="main" class="main">
+      		</div>
+    	</div>
+	</header>
+  	<main id="main" class="main" style="width: 1230px; margin: auto; padding-top: 80px;">
 	    <div class="pagetitle">
-      		<h1>Data Tables</h1>
+      		<h1>계좌관리</h1>
       		<nav>
         		<ol class="breadcrumb">
-          			<li class="breadcrumb-item"><a href="#">Home</a></li>
-          			<li class="breadcrumb-item">Tables</li>
-          			<li class="breadcrumb-item active">Data</li>
+          			<li class="breadcrumb-item"><a href="#">KOKOA BANK</a></li>
+          			<li class="breadcrumb-item active">계좌관리</li>
         		</ol>
       		</nav>
     	</div>
@@ -157,278 +42,351 @@
       		<div class="row">
        			<div class="col-lg-12">
 			        <div class="card">
-            			<div class="card-body">
-              				<h5 class="card-title">Datatables</h5>
-              				<p>Add lightweight datatables to your project with using the <a href="#" target="_blank">Simple DataTables</a> library. Just add <code>.datatable</code> class name to any table you wish to conver to a datatable</p>
+            			<div class="card-body" style="padding-top: 50px;">
 							<table class="table datatable">		
                 				<thead>
                   					<tr>
-					                    <th scope="col">#</th>
-					                    <th scope="col">Name</th>
-					                    <th scope="col">Position</th>
-					                    <th scope="col">Age</th>
-					                    <th scope="col">Start Date</th>
+                  						<th scope="col" class="doNotScript">
+				                    		<input type="checkbox" name="checked" id="allCheck" value="">
+					                    </th>
+					                    <th scope="col">seq</th>
+					                    <th scope="col">이름</th>
+					                    <th scope="col">계좌번호</th>
+					                    <th scope="col">전화번호</th>
                						</tr>
                					</thead>
                 				<tbody>
                   					<tr>
-					                    <th scope="row">1</th>
-					                    <td>Brandon Jacob</td>
-					                    <td>Designer</td>
-					                    <td>28</td>
-					                    <td>2016-05-25</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>1</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">2</th>
-					                    <td>Bridie Kessler</td>
-					                    <td>Developer</td>
-					                    <td>35</td>
-					                    <td>2014-12-05</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+				                     	<td>2</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">3</th>
-					                    <td>Ashleigh Langosh</td>
-					                    <td>Finance</td>
-					                    <td>45</td>
-					                    <td>2011-08-12</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>3</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">4</th>
-					                    <td>Angus Grady</td>
-					                    <td>HR</td>
-					                    <td>34</td>
-					                    <td>2012-06-11</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>4</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>5</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>6</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                   <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                   	<td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                   					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
-                  					</tr>
-                  					<tr>
-					                    <th scope="row">5</th>
-					                    <td>Raheem Lehner</td>
-					                    <td>Dynamic Division Officer</td>
-					                    <td>47</td>
-					                    <td>2011-04-19</td>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
                   					</tr>
                 				</tbody>
               				</table>
@@ -438,22 +396,41 @@
       		</div>
     	</section>
 	</main>
-  	<footer id="footer" class="footer">
+  	<footer id="footer" class="footer" style="width: 1180px; margin: auto;">
     	<div class="copyright">
      		 &copy; Copyright <strong><span>KOKOA BANK</span></strong> Corp. All Rights Reserved
     	</div>
   	</footer>
-  	<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 	<!-- Vendor JS Files -->
 	<script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
 	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="assets/vendor/chart.js/chart.umd.js"></script>
-	<script src="assets/vendor/echarts/echarts.min.js"></script>
-	<script src="assets/vendor/quill/quill.min.js"></script>
 	<script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
 	<script src="assets/vendor/tinymce/tinymce.min.js"></script>
-	<script src="assets/vendor/php-email-form/validate.js"></script>
 	<!-- Template Main JS File -->
 	<script src="assets/js/main.js"></script>
+	<script type="text/javascript">
+	
+	// checkbox 적용되는 datatables 효과 제거
+	const firstThElement = document.querySelector('th:first-child');
+	const aElement = firstThElement.querySelector('a');
+
+	firstThElement.removeAttribute('data-sortable');
+	firstThElement.removeAttribute('aria-sort');
+	firstThElement.classList.remove('datatable-ascending');
+	firstThElement.removeAttribute('style');
+
+	if (aElement) {
+	  aElement.removeAttribute('href');
+	  aElement.classList.remove('datatable-sorter');
+	}
+	
+	// checkbox all check
+	document.getElementById("allCheck").addEventListener('change', function(){
+		for (var i = 0; i < document.getElementsByName("checked").length; i++) {
+			document.getElementsByName("checked")[i].checked = this.checked;
+		}
+	});
+	
+	</script>
 </body>
 </html>
