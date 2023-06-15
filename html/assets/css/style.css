@@ -1,18 +1,4 @@
-/**
-* Template Name: NiceAdmin
-* Updated: May 30 2023 with Bootstrap v5.3.0
-* Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
-:root {
-  scroll-behavior: smooth;
-}
-
+/* General */
 body {
   font-family: "Open Sans", sans-serif;
   background: #f6f9ff;
@@ -42,24 +28,13 @@ h6 {
   font-family: "Nunito", sans-serif;
 }
 
-/*--------------------------------------------------------------
-# Main
---------------------------------------------------------------*/
-#main {
-  margin-top: 60px;
-  padding: 20px 30px;
-  transition: all 0.3s;
+header {
+  background: #f6f9ff;
+  width: 1320px; 
+  margin: auto;
 }
 
-@media (max-width: 1199px) {
-  #main {
-    padding: 20px;
-  }
-}
-
-/*--------------------------------------------------------------
-# Page Title
---------------------------------------------------------------*/
+/* Page Title */
 .pagetitle {
   margin-bottom: 10px;
 }
@@ -70,10 +45,6 @@ h6 {
   font-weight: 600;
   color: #012970;
 }
-
-/*--------------------------------------------------------------
-# Override some default Bootstrap stylings
---------------------------------------------------------------*/
 
 /* Card */
 .card {
@@ -139,14 +110,14 @@ h6 {
   font-weight: 600;
 }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+/* Footer */
 .footer {
+  width: 1180px;
   padding: 20px 0;
   font-size: 14px;
   transition: all 0.3s;
   border-top: 1px solid #cddfff;
+  margin: auto;   
 }
 
 .footer .copyright {
