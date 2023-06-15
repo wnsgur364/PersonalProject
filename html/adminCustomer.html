@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  	<meta charset="utf-8">
+  	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+  	<title>KOKOA BANK ADMIN</title>
+  	<!-- Google Fonts -->
+  	<link href="https://fonts.gstatic.com" rel="preconnect">
+  	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	<!-- Vendor CSS Files -->
+  	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  	<link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  	<!-- Template Main CSS File -->
+  	<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+	<header class="fixed-top container" id="header" style="width: 1320px; margin: auto;">
+		<div class="container">
+      		<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        		<ul class="nav col-auto me-auto mb-2 align-items-center">
+         	 		<li><a href="#" class="nav-link text-secondary fs-3 px-5">KOKOA BANK</a></li>
+          			<li><a href="adminAccount.html" class="nav-link px-3 text-black">계좌관리</a></li>
+          			<li><a href="adminTransaction.html" class="nav-link px-3 text-black">거래관리</a></li>
+          			<li><a href="adminCustomer.html" class="nav-link px-3 text-black">고객관리</a></li>
+          			<li><a href="adminFee.html" class="nav-link px-3 text-black">수수료관리</a></li>
+          			<li><a href="adminInfuencer.html" class="nav-link px-3 text-black">인플루언서관리</a></li>
+        		</ul>
+      		</div>
+    	</div>
+	</header>
+  	<main id="main" class="main" style="width: 1230px; margin: auto; padding-top: 80px;">
+	    <div class="pagetitle">
+      		<h1>고객관리</h1>
+      		<nav>
+        		<ol class="breadcrumb">
+          			<li class="breadcrumb-item"><a href="#">KOKOA BANK</a></li>
+          			<li class="breadcrumb-item active">고객관리</li>
+        		</ol>
+      		</nav>
+    	</div>
+	    <section class="section">
+      		<div class="row">
+       			<div class="col-lg-12">
+			        <div class="card">
+            			<div class="card-body" style="padding-top: 50px;">
+							<table class="table datatable">		
+                				<thead>
+                  					<tr>
+                  						<th scope="col" class="doNotScript">
+				                    		<input type="checkbox" name="checked" id="allCheck" value="">
+					                    </th>
+					                    <th scope="col">seq</th>
+					                    <th scope="col">이름</th>
+					                    <th scope="col">계좌번호</th>
+					                    <th scope="col">전화번호</th>
+               						</tr>
+               					</thead>
+                				<tbody>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>1</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+				                     	<td>2</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>3</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>4</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>5</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>6</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                   <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                   	<td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                  					<tr>
+					                    <td scope="col">
+					                    	<input type="checkbox" name="checked" value="">
+					                    </td>
+					                    <td>7</td>
+					                    <td>홍길동</td>
+					                    <td>3333-74-8759</td>
+					                    <td>010-1234-5678</td>
+                  					</tr>
+                				</tbody>
+              				</table>
+            			</div>
+          			</div>
+        		</div>
+      		</div>
+    	</section>
+	</main>
+  	<footer id="footer" class="footer" style="width: 1180px; margin: auto;">
+    	<div class="copyright">
+     		 &copy; Copyright <strong><span>KOKOA BANK</span></strong> Corp. All Rights Reserved
+    	</div>
+  	</footer>
+	<!-- Bootstrap JS Files -->
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<!-- Datatables JS Files -->
+	<script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+	<!-- Template Main JS File -->
+	<script src="assets/js/main.js"></script>
+	<script type="text/javascript">
+	
+	// checkbox 적용되는 datatables 효과 제거
+	const firstThElement = document.querySelector('th:first-child');
+	const aElement = firstThElement.querySelector('a');
+
+	firstThElement.removeAttribute('data-sortable');
+	firstThElement.removeAttribute('aria-sort');
+	firstThElement.classList.remove('datatable-ascending');
+	firstThElement.removeAttribute('style');
+
+	if (aElement) {
+	  aElement.removeAttribute('href');
+	  aElement.classList.remove('datatable-sorter');
+	}
+	
+	// checkbox all check
+	document.getElementById("allCheck").addEventListener('change', function(){
+		for (var i = 0; i < document.getElementsByName("checked").length; i++) {
+			document.getElementsByName("checked")[i].checked = this.checked;
+		}
+	});
+	
+	</script>
+</body>
+</html>
