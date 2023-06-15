@@ -16,14 +16,16 @@
 <body>
 	<header class="fixed-top container" id="header" style="width: 1320px; margin: auto;">
 		<div class="container">
-      		<ul class="nav col-auto me-auto mb-2 align-items-center">
+      		<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        		<ul class="nav col-auto me-auto mb-2 align-items-center">
          	 		<li><a href="#" class="nav-link text-secondary fs-3 px-5">KOKOA BANK</a></li>
           			<li><a href="adminAccount.html" class="nav-link px-3 text-black">계좌관리</a></li>
           			<li><a href="adminTransaction.html" class="nav-link px-3 text-black">거래관리</a></li>
           			<li><a href="adminCustomer.html" class="nav-link px-3 text-black">고객관리</a></li>
           			<li><a href="adminFee.html" class="nav-link px-3 text-black">수수료관리</a></li>
           			<li><a href="adminInfuencer.html" class="nav-link px-3 text-black">인플루언서관리</a></li>
-       		</ul>
+        		</ul>
+      		</div>
     	</div>
 	</header>
   	<main id="main" class="main" style="width: 1230px; margin: auto; padding-top: 80px;">
@@ -405,29 +407,5 @@
 	<script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
 	<!-- Template Main JS File -->
 	<script src="assets/js/main.js"></script>
-	<script type="text/javascript">
-	
-	// checkbox 적용되는 datatables 효과 제거
-	const firstThElement = document.querySelector('th:first-child');
-	const aElement = firstThElement.querySelector('a');
-
-	firstThElement.removeAttribute('data-sortable');
-	firstThElement.removeAttribute('aria-sort');
-	firstThElement.classList.remove('datatable-ascending');
-	firstThElement.removeAttribute('style');
-
-	if (aElement) {
-	  aElement.removeAttribute('href');
-	  aElement.classList.remove('datatable-sorter');
-	}
-	
-	// checkbox all check
-	document.getElementById("allCheck").addEventListener('change', function(){
-		for (var i = 0; i < document.getElementsByName("checked").length; i++) {
-			document.getElementsByName("checked")[i].checked = this.checked;
-		}
-	});
-	
-	</script>
 </body>
 </html>
