@@ -34,6 +34,12 @@ header {
   margin: auto;
 }
 
+main {
+  width: 1230px; 
+  margin: auto; 
+  padding-top: 80px;
+}
+
 /* Page Title */
 .pagetitle {
   margin-bottom: 10px;
