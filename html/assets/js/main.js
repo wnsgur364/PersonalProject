@@ -39,20 +39,7 @@
   	datatables.forEach(datatable => {
     	new simpleDatatables.DataTable(datatable);
   	})
-
-	// checkbox 적용되는 datatables 효과 제거
-	const firstThElement = document.querySelector('th:first-child');
-	const aElement = firstThElement.querySelector('a');
-
-	firstThElement.removeAttribute('data-sortable');
-	firstThElement.removeAttribute('aria-sort');
-	firstThElement.classList.remove('datatable-ascending');
-	firstThElement.removeAttribute('style');
-
-	if (aElement) {
-	  aElement.removeAttribute('href');
-	  aElement.classList.remove('datatable-sorter');
-	}
+	
 	
 	// checkbox all check
 	document.getElementById("allCheck").addEventListener('change', function(){
@@ -60,5 +47,39 @@
 			document.getElementsByName("checked")[i].checked = this.checked;
 		}
 	});	
+	
+	// 검색 컨테이너를 숨김 처리
+	const searchContainer = document.querySelector('.datatable-search');
+	searchContainer.style.display = 'none';
+	
+	// HTML 요소 가져오기
+	const datatableTop = document.querySelector('.datatable-top');
+	const datatableDropdown = document.querySelector('.datatable-dropdown');
+	
+	// 스타일 설정하여 오른쪽에 붙도록 변경
+	datatableTop.style.display = 'flex';
+	datatableTop.style.justifyContent = 'flex-end';
+	datatableDropdown.style.marginRight = '10px';
+	
+	// 벨리데이션 관련	
+	const forms = document.querySelectorAll('.needs-validation')
+	
+	document.getElementById('submitForm').addEventListener('click', event => {
+		for (const form of forms) {
+	    	if (!form.checkValidity()) {
+	      		for (const input of form.querySelectorAll('input[required]')) {
+	        		if (input.value.trim() === '') {
+	          			input.style.borderColor = 'red';
+	        			input.parentElement.querySelector('.invalid-feedback').classList.add('d-block')
+	          			break;
+	        		} else {
+	          			input.style.borderColor = '';
+	       				input.parentElement.querySelector('.invalid-feedback').classList.remove('d-block')
+	        			}
+				}
+	      		break;
+			}
+		}
+	}, false)
 	
 })();

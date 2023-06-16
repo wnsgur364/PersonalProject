@@ -1,8 +1,8 @@
 /* General */
 body {
-  font-family: "Open Sans", sans-serif;
-  background: #f6f9ff;
-  color: #444444;
+	font-family: "Open Sans", sans-serif;
+	background: #f6f9ff;
+	color: #444444;
 }
 
 li {
@@ -10,13 +10,13 @@ li {
 }
 
 a {
-  color: #4154f1;
-  text-decoration: none;
+	color: #4154f1;
+	text-decoration: none;
 }
 
 a:hover {
-  color: #717ff5;
-  text-decoration: none;
+	color: #717ff5;
+	text-decoration: none;
 }
 
 h1,
@@ -25,111 +25,147 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Nunito", sans-serif;
+	font-family: "Nunito", sans-serif;
 }
 
 header {
-  background: #f6f9ff;
-  width: 1320px; 
-  margin: auto;
+	background: #f6f9ff;
+	width: 1320px; 
+	margin: auto;
 }
 
 #main {
-  margin-top: 60px;
-  padding: 20px 30px;
-  transition: all 0.3s;
-  width: 1230px; 
-  margin: auto; 
-  padding-top: 80px;
+	margin-top: 60px;
+	padding: 20px 30px;
+	transition: all 0.3s;
+	width: 1230px; 
+	margin: auto; 
+	padding-top: 80px;
 }
 
 /* Page Title */
 .pagetitle {
-  margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .pagetitle h1 {
-  font-size: 24px;
-  margin-bottom: 0;
-  font-weight: 600;
-  color: #012970;
+	font-size: 24px;
+	margin-bottom: 0;
+	font-weight: 600;
+	color: #012970;
 }
 
 /* Card */
 .card {
-  margin-bottom: 30px;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+	margin-bottom: 30px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
 }
 
 .card-header,
 .card-footer {
-  border-color: #ebeef4;
-  background-color: #fff;
-  color: #798eb3;
-  padding: 15px;
+	border-color: #ebeef4;
+	background-color: #fff;
+	color: #798eb3;
+	padding: 15px;
 }
 
 .card-title {
-  padding: 20px 0 15px 0;
-  font-size: 18px;
-  font-weight: 500;
-  color: #012970;
-  font-family: "Poppins", sans-serif;
+	padding: 20px 0 15px 0;
+	font-size: 18px;
+	font-weight: 500;
+	color: #012970;
+	font-family: "Poppins", sans-serif;
 }
 
 .card-title span {
-  color: #899bbd;
-  font-size: 14px;
-  font-weight: 400;
+	color: #899bbd;
+	font-size: 14px;
+	font-weight: 400;
 }
 
 .card-body {
-  padding: 0 20px 20px 20px;
+	padding: 0 20px 20px 20px;
 }
 
 .card-img-overlay {
-  background-color: rgba(255, 255, 255, 0.6);
+	background-color: rgba(255, 255, 255, 0.6);
 }
 
 /* Breadcrumbs */
 .breadcrumb {
-  font-size: 14px;
-  font-family: "Nunito", sans-serif;
-  color: #899bbd;
-  font-weight: 600;
+	font-size: 14px;
+	font-family: "Nunito", sans-serif;
+	color: #899bbd;
+	font-weight: 600;
 }
 
 .breadcrumb a {
-  color: #899bbd;
-  transition: 0.3s;
+	color: #899bbd;
+	transition: 0.3s;
 }
 
 .breadcrumb a:hover {
-  color: #51678f;
+	color: #51678f;
 }
 
 .breadcrumb .breadcrumb-item::before {
-  color: #899bbd;
+	color: #899bbd;
 }
 
 .breadcrumb .active {
-  color: #51678f;
-  font-weight: 600;
+	color: #51678f;
+	font-weight: 600;
+}
+
+/* Error 404 */
+.error-404 {
+	padding: 30px;
+}
+
+.error-404 h1 {
+	font-size: 180px;
+	font-weight: 700;
+	color: #4154f1;
+	margin-bottom: 0;
+	line-height: 150px;
+}
+
+.error-404 h2 {
+	font-size: 24px;
+	font-weight: 700;
+	color: #012970;
+	margin-bottom: 30px;
+}
+
+.error-404 .btn {
+	background: #51678f;
+	color: #fff;
+	padding: 8px 30px;
+}
+
+.error-404 .btn:hover {
+	background: #3e4f6f;
+}
+
+@media (min-width: 992px) {
+	.error-404 img {
+		max-width: 50%;
+	}
 }
 
 /* Footer */
 .footer {
-  width: 1180px;
-  padding: 20px 0;
-  font-size: 14px;
-  transition: all 0.3s;
-  border-top: 1px solid #cddfff;
-  margin: auto;   
+	width: 1180px;
+	padding: 20px 0;
+	font-size: 14px;
+	transition: all 0.3s;
+	border-top: 1px solid #cddfff;
+	margin: auto;   
 }
 
 .footer .copyright {
-  text-align: center;
-  color: #012970;
+	text-align: center;
+	color: #012970;
 }

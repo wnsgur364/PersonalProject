@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  	<meta charset="utf-8">
+  	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+  	<title>KOKOA BANK ADMIN</title>
+	<!-- 부트스트랩 -->
+	<link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- JqueryUi -->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<!-- Fontawesome -->
+	<script src="https://kit.fontawesome.com/b05f67c88a.js" crossorigin="anonymous"></script>
+	<!-- Style CSS -->
+	<link href="../assets/css/style.css" rel="stylesheet">
+	<!-- Datatables -->
+	<link href="../assets/vendor/simple-datatables/style.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	<!-- font-family: 'Dongle', sans-serif; -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="fixed-top container" id="header" style="width: 1320px; margin: auto;">
+		<div class="container">
+      		<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+				<ul class="nav col-auto me-auto mb-2 align-items-center">
+         	 		<li><a href="adminMain.html" class="nav-link text-secondary fs-3 px-5">KOKOA BANK</a></li>
+          			<li><a href="adminAccount.html" class="nav-link px-3 text-black">계좌관리</a></li>
+          			<li><a href="adminTransaction.html" class="nav-link px-3 text-black">거래관리</a></li>
+          			<li><a href="adminCustomer.html" class="nav-link px-3 text-black">고객관리</a></li>
+          			<li><a href="adminFee.html" class="nav-link px-3 text-black">수수료관리</a></li>
+          			<li><a href="adminInfuencer.html" class="nav-link px-3 text-black">인플루언서관리</a></li>
+        		</ul>
+      		</div>
+    	</div>
+	</header>
+	<main id="main" class="main">
+	    <div class="pagetitle">
+      		<h1>수수료관리</h1>
+      		<nav>
+        		<ol class="breadcrumb">
+          			<li class="breadcrumb-item"><a href="#">KOKOA BANK</a></li>
+          			<li class="breadcrumb-item active">수수료관리</li>
+        		</ol>
+      		</nav>
+    	</div>
+	    <div class="col-lg-12">
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Custom Styled Validation</h5>
+              <p>For custom Bootstrap form validation messages, you’ll need to add the <code>novalidate</code> boolean attribute to your <code>&lt;form&gt;</code>. This disables the browser default feedback tooltips, but still provides access to the form validation APIs in JavaScript. </p>
+
+              <!-- Custom Styled Validation -->
+              <form class="row g-3 needs-validation" novalidate>
+              <div class="col-md-12">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingName" placeholder="Your Name" required>
+                    <label for="floatingName">Your Name</label>
+                    <div class="invalid-feedback">
+                    Looks good!
+                  	</div>
+                </div>
+               </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="validationCustom02" value="Doe" required>
+                  <div class="invalid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustomUsername" class="form-label">Username</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                      Please choose a username.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustom03" class="form-label">City</label>
+                  <input type="text" class="form-control" id="validationCustom03" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid city.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom04" class="form-label">State</label>
+                  <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>...</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid state.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom05" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="validationCustom05" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid zip.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center">
+					<button class="btn btn-outline-secondary" id="submitForm" type="submit">저장</button>
+					<button class="btn btn-outline-secondary btnCancel" type="button">뒤로</button>
+				</div>
+              </form><!-- End Custom Styled Validation -->
+            </div>
+          </div>
+		</div>	
+	</main>
+  	<footer id="footer" class="footer" style="width: 1180px; margin: auto;">
+    	<div class="copyright">
+     		 &copy; Copyright <strong><span>KOKOA BANK</span></strong> Corp. All Rights Reserved
+    	</div>
+  	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="../assets/vendor/simple-datatables/simple-datatables.js"></script>
+	<script src="../assets/js/main.js"></script>	
+	<script type=text/javascript>
+	
+		// datepicker
+		$(function() {
+	
+			$(".datepicker").datepicker({
+				dateFormat: 'yy-mm-dd'
+			});
+	
+		});
+	
+		// 기간설정
+		$(".selectPeriod").on("change", function() {
+			var period = $(this).val();
+			var today = new Date();
+			var oneWeekAgo = new Date(today.getTime() - (7 * 24 * 60 * 60 * 1000));
+			var oneMonthAgo = new Date(today.getTime() - (30 * 24 * 60 * 60 * 1000));
+			var threeMonthsAgo = new Date(today.getTime() - (90 * 24 * 60 * 60 * 1000));
+			
+			switch (period) {
+				case "1주일":
+					$(".dateStart").datepicker("setDate", oneWeekAgo);
+					$(".dateFinish").datepicker("setDate", today);
+					break;
+				case "1개월":
+					$(".dateStart").datepicker("setDate", oneMonthAgo);
+					$(".dateFinish").datepicker("setDate", today);
+					break;
+				case "3개월":
+					$(".dateStart").datepicker("setDate", threeMonthsAgo);
+					$(".dateFinish").datepicker("setDate", today);
+					break;
+			}
+		});	
+		
+		// 이전 버튼 스크립트
+		document.querySelector('.btnCancel').addEventListener('click', function() {
+	  		window.history.back();
+		});
+	
+	</script>
+</body>
+</html>

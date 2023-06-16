@@ -8,9 +8,9 @@
 	<link href="https://fonts.gstatic.com" rel="preconnect">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 	<!-- Vendor CSS Files -->
-	<link href="../html/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<!-- Template Main CSS File -->
-	<link href="../html/assets/css/style.css" rel="stylesheet">
+	<link href="../assets/css/style.css" rel="stylesheet">
 </head>
 <body>
 	<header class="fixed-top container" id="header">
@@ -185,7 +185,43 @@
      		 &copy; Copyright <strong><span>KOKOA BANK</span></strong> Corp. All Rights Reserved
     	</div>
   	</footer>
-	<script src="../html/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="../html/assets/js/main.js"></script>
+	<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="../assets/js/main.js"></script>
+	<script type=text/javascript>
+	
+		// datepicker
+		$(function() {
+	
+			$(".datepicker").datepicker({
+				dateFormat: 'yy-mm-dd'
+			});
+	
+		});
+	
+		// 기간설정
+		$(".selectPeriod").on("change", function() {
+			var period = $(this).val();
+			var today = new Date();
+			var oneWeekAgo = new Date(today.getTime() - (7 * 24 * 60 * 60 * 1000));
+			var oneMonthAgo = new Date(today.getTime() - (30 * 24 * 60 * 60 * 1000));
+			var threeMonthsAgo = new Date(today.getTime() - (90 * 24 * 60 * 60 * 1000));
+			
+			switch (period) {
+				case "1주일":
+					$(".dateStart").datepicker("setDate", oneWeekAgo);
+					$(".dateFinish").datepicker("setDate", today);
+					break;
+				case "1개월":
+					$(".dateStart").datepicker("setDate", oneMonthAgo);
+					$(".dateFinish").datepicker("setDate", today);
+					break;
+				case "3개월":
+					$(".dateStart").datepicker("setDate", threeMonthsAgo);
+					$(".dateFinish").datepicker("setDate", today);
+					break;
+			}
+		});	
+	
+	</script>
 </body>
 </html>
