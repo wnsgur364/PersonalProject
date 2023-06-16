@@ -34,7 +34,10 @@ header {
   margin: auto;
 }
 
-main {
+#main {
+  margin-top: 60px;
+  padding: 20px 30px;
+  transition: all 0.3s;
   width: 1230px; 
   margin: auto; 
   padding-top: 80px;
