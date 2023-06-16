@@ -300,6 +300,18 @@
 		  aElement.removeAttribute('href');
 		  aElement.classList.remove('datatable-sorter');
 		}
+		
+		// 상하정렬버튼 클릭시 checkbox 해제
+		const nonFirstThElements = document.querySelectorAll('th:not(:first-child)');
+
+		nonFirstThElements.forEach((thElement) => {
+			thElement.addEventListener('click', function() {
+			  	var checkboxes = document.getElementsByName("checked");
+			  	for (var i = 0; i < checkboxes.length; i++) {
+			    	checkboxes[i].checked = false;
+			  	}
+			});
+		});
 	
 	</script>
 </body>
